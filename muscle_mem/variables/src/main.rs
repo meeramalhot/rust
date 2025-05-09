@@ -20,6 +20,7 @@ fn main() {
     println!("The value of x is: {x}");
 
     another_function();
+    
     let a = [10, 20, 30, 40, 50];
 
     for element in a {
@@ -28,5 +29,12 @@ fn main() {
 }
 
 fn another_function() {
-    println!("Another function.");
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{number}!");
+
+        number -= 1;
+    }
+
 }
