@@ -14,3 +14,20 @@ fn main() {
 fn change(some_string: &String) {
   some_string.push_str(", world");
 }
+
+
+//SLICING
+// let s = String::from("hello");
+
+// equivalent
+// let slice = &s[0..2];
+// let slice = &s[..2];
+
+fn slice {
+  let s = String::from("hello");
+
+  let len = s.len();
+
+  let slice = &s[3..len];
+  let slice = &s[3..];
+}
